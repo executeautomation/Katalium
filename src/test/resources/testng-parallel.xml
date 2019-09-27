@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="tests" thread-count="2" >
+    <test name="simple" >
+        <parameter name="kataScreenshot" value="true" />
+        <parameter name="kataBrowser" value="firefox" />
+        <classes>
+            <class name="com.katalon.kata.sample.testcase.simple.LoginPage" />
+        </classes>
+    </test>
+
+    <!-- <test name="simple" >
+        <parameter name="kataScreenshot" value="true" />
+        <parameter name="kataBrowser" value="firefox" />
+        <classes>
+            <class name="com.katalon.kata.sample.testcase.simple.LoginPage" />
+        </classes>
+    </test> -->
+
+</suite>
